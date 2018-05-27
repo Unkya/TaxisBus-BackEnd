@@ -6,13 +6,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.nawak.taxisBus.bean.user.User;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 
-@Controller
+@RestController
 @RequestMapping(value = "/user")
 @Api(value = "/user", description = "Utilisateur", consumes="application/json")
 public interface WSUser {
